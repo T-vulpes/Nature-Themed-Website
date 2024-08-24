@@ -4,7 +4,7 @@ Welcome to the Nature-Themed Website repository! This project is designed to sho
 
 ## Demo
 
-You can view the live demo of the website [here](https://your-demo-link.com).
+You can view the live demo of the website [here](https://t-vulpes.github.io/Nature-Themed-Website/).
 
 
 # Doğa Temalı Web Sitesi TR
@@ -13,4 +13,4 @@ Doğa Temalı Web Sitesi deposuna hoş geldiniz! Bu proje, alt bilgi ve slayt g�
 
 ## Demo
 
-Web sitesinin canlı demosunu [buradan](https://your-demo-link.com) görüntüleyebilirsiniz.
+Web sitesinin canlı demosunu [buradan](https://t-vulpes.github.io/Nature-Themed-Website/) görüntüleyebilirsiniz.
