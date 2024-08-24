@@ -230,11 +230,11 @@ h1 {
 }
 
 .nature-card img {
-    width: 300px; /* Resmin genişliği kartın genişliğine uyacak şekilde ayarlanır */
-    height: 300px; /* Yükseklik otomatik olarak orantılı ayarlanır */
-    border-radius: 10px; /* Köşe yumuşatma */
-    margin-bottom: 15px; /* Alt boşluk */
-    object-fit: cover; /* Resmi kartın içine tam olarak sığdırır */
+    width: 300px; 
+    height: 300px; 
+    border-radius: 10px; 
+    margin-bottom: 15px; 
+    object-fit: cover; 
 }
 .circle-container {
     display: flex;
@@ -246,7 +246,7 @@ h1 {
 .circle {
     width: 80px;
     height: 80px;
-    background-color: #ffffff; /* Arka plan rengini değiştirebilirsiniz */
+    background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
@@ -256,15 +256,14 @@ h1 {
 .circle img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Resmi yuvarlağın içinde tam olarak göstermek için */
+    object-fit: cover;
     border-radius: 50%;
 }
 
 .circle:hover {
-    transform: scale(1.1); /* Hover ile hafif büyütme efekti */
+    transform: scale(1.1);
 }
 
-/* Genel Footer Stili */
 .footer {
     background: linear-gradient(135deg, #b12452, #5b7faf);
     color: #fff;
@@ -278,7 +277,6 @@ h1 {
     margin: 0 auto;
 }
 
-/* Başlık ve Açıklama Stili */
 .footer-heading {
     font-size: 2.5em;
     margin-bottom: 10px;
@@ -289,8 +287,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-
-/* Sosyal Medya İkonları Stili */
 .footer-social {
     font-size: 1em;
     margin-bottom: 20px;
@@ -312,16 +308,14 @@ h1 {
     color: #5b7faf;
 }
 
-/* Telif Hakkı Stili */
 .footer-copy {
     font-size: 0.9em;
     margin: 0;
 }
 
-/* Genel Stil Ayarları */
 .flower-histology {
     padding: 20px;
-    background-color: #f9f9f9; /* Arka plan rengi */
+    background-color: #f9f9f9; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -333,9 +327,9 @@ h1 {
 }
 
 .flower-histology-image img {
-    width: 250px; /* Fotoğraf genişliği */
-    height: 250px; /* Fotoğraf yüksekliği */
-    object-fit: cover; /* Fotoğrafın orantılı şekilde kesilmesini sağlar */
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -355,7 +349,6 @@ h1 {
     color: #333;
 }
 
-/* Genel Stil Ayarları */
 .flower-anatomy {
     padding: 20px;
     background-color: #fff;
@@ -403,36 +396,33 @@ h1 {
 }
 
 .flower-anatomy-image img {
-    width: 100%; /* Fotoğraf genişliği */
-    height: auto; /* Fotoğraf yüksekliği */
+    width: 100%; 
+    height: auto; 
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-
-/* Slayt Gösterim Stilleri */
 .slideshow {
     position: relative;
     max-width: 100%;
-    height: 300px; /* Slayt yüksekliği */
+    height: 300px; 
     margin-top: 20px;
-    overflow: hidden; /* Resimleri sınırlandırmak için */
-    border-radius: 8px; /* Köşe yuvarlama */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+    overflow: hidden; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .slideshow .mySlides {
     display: none;
-    height: 100%; /* Slayt yüksekliğini kapsar */
+    height: 100%; 
     position: absolute;
-    width: 100%; /* Slayt genişliği */
+    width: 100%; 
 }
 
 .slideshow img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Resmin kapsayıcıya uygun şekilde kesilmesini sağlar */
+    object-fit: cover; 
     vertical-align: middle;
 }
 
