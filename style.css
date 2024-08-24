@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "MS Serif", "New York", serif;
+}
+
+.nature-hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/nature_background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.nature-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: 1;
+}
+
+.nature-navbar {
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.6s ease; /* Daha yavaş geçiş */
+}
+
+button:hover {
+    background: #ca476e;
+}
+
+/* Signup button için sağa kaydırma */
+.signup-button {
+z-index:1;
+    margin-left: auto;
+}
+
+.nature-content {
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+
+.nature-side-bar {
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#b12452, #5b7faf);
+    position: absolute;
+    right: 0;
+    top: 0;
+
+z-index:1;
+}
+
+.nature-menu {
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+
+.nature-social-links img,
+.nature-useful-links img {
+    width: 25px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.nature-social-links {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nature-useful-links {
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+.nature-animations img {
+    animation: nature-fall 12s linear infinite;
+    animation-fill-mode: forwards;
+}
+
+.nature-animations {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+    top: -100px;
+}
+
+@keyframes nature-fall {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+}
+
+.nature-bird {
+    width: 180px;
+}
+
+.nature-bird:nth-child(2) {
+    animation-delay: 2s;
+    width: 200px;
+}
+
+.nature-flower {
+    width: 80px;
+}
+
+.nature-flower:nth-child(2) {
+    animation-delay: 1s;
+    width: 60px;
+}
+
+/* New Styles for Text in nature-section */
+.nature-section {
+    padding: 50px;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.nature-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #9a3173;
+    text-align: center;
+    text-shadow: 2px 2px 4px #aaa;
+}
+
+.nature-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #444;
+    background: #ffe6f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.nature-section h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #a13567;
+    text-align: left;
+    border-left: 4px solid #0d720d;
+    padding-left: 10px;
+}
+
+.nature-section ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    color: #696969;
+}
+
+.nature-section ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.nature-card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.nature-card {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.nature-card:hover {
+    transform: translateY(-10px);
+}
+
+.nature-card h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #9a3173;
+}
+
+.nature-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.nature-card img {
+    width: 300px; /* Resmin genişliği kartın genişliğine uyacak şekilde ayarlanır */
+    height: 300px; /* Yükseklik otomatik olarak orantılı ayarlanır */
+    border-radius: 10px; /* Köşe yumuşatma */
+    margin-bottom: 15px; /* Alt boşluk */
+    object-fit: cover; /* Resmi kartın içine tam olarak sığdırır */
+}
+.circle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff; /* Arka plan rengini değiştirebilirsiniz */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmi yuvarlağın içinde tam olarak göstermek için */
+    border-radius: 50%;
+}
+
+.circle:hover {
+    transform: scale(1.1); /* Hover ile hafif büyütme efekti */
+}
+
+/* Genel Footer Stili */
+.footer {
+    background: linear-gradient(135deg, #b12452, #5b7faf);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Başlık ve Açıklama Stili */
+.footer-heading {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+
+/* Sosyal Medya İkonları Stili */
+.footer-social {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.footer-social p {
+    margin: 0 0 10px;
+}
+
+.footer-social-icon {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.footer-social-icon:hover {
+    color: #5b7faf;
+}
+
+/* Telif Hakkı Stili */
+.footer-copy {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* Genel Stil Ayarları */
+.flower-histology {
+    padding: 20px;
+    background-color: #f9f9f9; /* Arka plan rengi */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flower-histology-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.flower-histology-image img {
+    width: 250px; /* Fotoğraf genişliği */
+    height: 250px; /* Fotoğraf yüksekliği */
+    object-fit: cover; /* Fotoğrafın orantılı şekilde kesilmesini sağlar */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flower-histology-text {
+    flex: 1;
+}
+
+.flower-histology-text h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.flower-histology-text p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Genel Stil Ayarları */
+.flower-anatomy {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flower-anatomy-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.flower-anatomy-text {
+    flex: 2;
+    max-width: 60%;
+}
+
+.flower-anatomy-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.flower-anatomy-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.flower-anatomy-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.flower-anatomy-text li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.flower-anatomy-image {
+    flex: 1;
+    max-width: 40%;
+}
+
+.flower-anatomy-image img {
+    width: 100%; /* Fotoğraf genişliği */
+    height: auto; /* Fotoğraf yüksekliği */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Slayt Gösterim Stilleri */
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    height: 300px; /* Slayt yüksekliği */
+    margin-top: 20px;
+    overflow: hidden; /* Resimleri sınırlandırmak için */
+    border-radius: 8px; /* Köşe yuvarlama */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+}
+
+.slideshow .mySlides {
+    display: none;
+    height: 100%; /* Slayt yüksekliğini kapsar */
+    position: absolute;
+    width: 100%; /* Slayt genişliği */
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmin kapsayıcıya uygun şekilde kesilmesini sağlar */
+    vertical-align: middle;
+}
+
+.slideshow .prev, .slideshow .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.slideshow .prev {
+    left: 0;
+}
+
+.slideshow .next {
+    right: 0;
+}
+
+.slideshow .prev:hover, .slideshow .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
