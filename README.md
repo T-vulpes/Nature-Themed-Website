@@ -1,4 +1,4 @@
-# Nature-Themed Website
+# Nature-Themed Website #simple#
 
 Welcome to the Nature-Themed Website repository! This project is designed to showcase a beautiful and interactive website with a nature theme, including features such as a footer and a slideshow.
 
